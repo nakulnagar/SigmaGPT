@@ -3,12 +3,14 @@ import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import {v1 as uuidv1} from "uuid";
 
+const API_URL = import.meta.env.VITE_API_URL || "http://localhost:8080";
+
 function Sidebar() {
      const {allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId , setPrevChats, searchQuery, setSearchQuery, sidebarOpen, setSidebarOpen} = useContext(MyContext);
 
      const getAllThreads = async () => {
         try {
-            const response = await fetch("http://localhost:8080/api/thread");
+            const response = await fetch(`${API_URL}/api/thread`);
             const res = await response.json();
             const filteredData = res.map(thred => ({threadId: thred.threadId, title: thred.title}));
             // console.log(filteredData);
@@ -34,7 +36,7 @@ function Sidebar() {
         setCurrThreadId(newThreadId);
 
         try {
-            const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}`);
+            const response = await fetch(`${API_URL}/api/thread/${newThreadId}`);
             const res = await response.json();
             console.log(res);
             setPrevChats(res);
@@ -47,7 +49,7 @@ function Sidebar() {
 
      const deleteThread = async (threadId) => {
         try {
-            const response = await fetch(`http://localhost:8080/api/thread/${threadId}`,{method: "DELETE"});
+            const response = await fetch(`${API_URL}/api/thread/${threadId}`, { method: "DELETE" });
             const res = await response.json();
             console.log(res);
 
