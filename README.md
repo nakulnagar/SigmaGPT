@@ -1,6 +1,6 @@
 # 🚀 SigmaGPT
 
-A modern full-stack AI chatbot inspired by ChatGPT, built using React, Node.js, Express, MongoDB, and Groq AI API. SigmaGPT supports multi-thread conversations, persistent chat history, search functionality, and a clean responsive UI.
+A modern **full-stack AI chatbot** inspired by ChatGPT, built using **React**, **Node.js**, **Express**, **MongoDB**, and **Groq AI API**. SigmaGPT supports multi-thread conversations, persistent chat history, search functionality, and a clean responsive UI.
 
 ---
 
