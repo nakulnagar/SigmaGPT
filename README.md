@@ -6,7 +6,7 @@ A modern **full-stack AI chatbot** inspired by ChatGPT, built using **React**, *
 
 ## 🌐 Live Demo
 
-- **Frontend:** https://sigma-gpt-one-theta.vercel.app/
+🔗https://sigma-gpt-one-theta.vercel.app/
 
 ---
 
