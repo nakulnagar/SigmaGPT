@@ -4,6 +4,12 @@ A modern **full-stack AI chatbot** inspired by ChatGPT, built using **React**, *
 
 ---
 
+## 🌐 Live Demo
+
+- **Frontend:** https://sigma-gpt-one-theta.vercel.app/
+
+---
+
 ## 📸 Preview
 
 | Home | Chat | closed-sidebar |
@@ -77,55 +83,6 @@ SIGMA-GPT
 
 ---
 
-# ⚙️ Installation
-
-## 1 Clone Repository
-
-```bash
-git clone https://github.com/nakulnagar/SigmaGPT.git
-
-cd SigmaGPT
-```
-
----
-
-## 2 Backend
-
-```bash
-cd Backend
-
-npm install
-
-npm run dev
-```
-
----
-
-## 3 Frontend
-
-```bash
-cd Frontend
-
-npm install
-
-npm run dev
-```
-
----
-
-# 🔑 Environment Variables
-
-Create a `.env` file inside the **Backend** folder.
-
-```env
-MONGODB_URI=your_mongodb_connection_string
-
-GROQ_API_KEY=your_groq_api_key
-
-JWT_SECRET=your_secret_key
-```
-
----
 
 # 💡 How It Works
 
